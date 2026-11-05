@@ -1,0 +1,12 @@
+{"model_id":"music_v1","composition_plan":{
+"positive_global_styles":["modern electronic","confident","premium tech commercial","clean punchy beat","118 BPM","polished production","sleek synths","driving bass","instrumental"],
+"negative_global_styles":["vocals","singing","lo-fi","aggressive distortion","cheesy","messy mix"],
+"sections":[
+{"section_name":"Hook tension","positive_local_styles":["tense filtered pulse","ticking hi-hat","glitchy stutter accents","dark minimal synth","suspense"],"negative_local_styles":["vocals","full drums","heavy bass"],"duration_ms":8000,"lines":[]},
+{"section_name":"Reveal riser","positive_local_styles":["rising build","white noise sweep","snare roll","opening filter","anticipation into drop"],"negative_local_styles":["vocals","sudden silence"],"duration_ms":6000,"lines":[]},
+{"section_name":"Price drop","positive_local_styles":["big bass drop","full drum impact","sidechained synth chords","wide confident energy"],"negative_local_styles":["vocals","thin arrangement","soft attack"],"duration_ms":6000,"lines":[]},
+{"section_name":"Portfolio groove","positive_local_styles":["propulsive groove","bright arpeggios","layered electronic percussion","forward motion","high-end sheen"],"negative_local_styles":["vocals","empty bars","muddy low end"],"duration_ms":28000,"lines":[]},
+{"section_name":"Comparison and checklist","positive_local_styles":["rhythmic synth stabs","steady four on the floor","punchy accents on every bar","confident and clear"],"negative_local_styles":["vocals","busy melody","harsh compression"],"duration_ms":24000,"lines":[]},
+{"section_name":"Process build","positive_local_styles":["anthemic chord progression","rising intensity","sparkling top lines","controlled momentum"],"negative_local_styles":["vocals","dark harmonies"],"duration_ms":8000,"lines":[]},
+{"section_name":"CTA resolve","positive_local_styles":["full warm chords","steady groove then resolved final chord","satisfying release","clean ending with short tail"],"negative_local_styles":["vocals","abrupt cut","unresolved tension"],"duration_ms":10000,"lines":[]}
+]}}
