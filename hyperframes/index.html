@@ -1,61 +1,56 @@
 <!doctype html>
-<html lang="en" data-resolution="portrait">
+<html lang="es" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
-      :root {
-        --ground: #000;
-        --ink: #ffffff;
-        --font-display: sans-serif;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1080px;
-        height: 1920px;
-        overflow: hidden;
-        background: var(--ground);
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-      }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      
+@font-face{font-family:'Syne';src:url('assets/fonts/Syne-normal-latin-variable.woff2') format('woff2');font-weight:400 800;}
+@font-face{font-family:'DM Sans';src:url('assets/fonts/DMSans-normal-latin-variable.woff2') format('woff2');font-weight:100 1000;}
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #05070D; }
+      #root { width: 100%; height: 100%; position: relative; font-family: 'DM Sans', sans-serif; }
+      #ground { position: absolute; inset: 0; z-index: 0;
+        background: radial-gradient(90% 55% at 50% 38%, #0F1A2E 0%, #0B1220 45%, #05070D 100%); }
+      #grain { position: absolute; inset: 0; z-index: 50; pointer-events: none; opacity: .07; mix-blend-mode: overlay;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1080"
-      data-height="1920"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="88.5" data-width="1080" data-height="1920">
+      <div id="ground" data-layout-ignore></div>
+      <div id="s01" data-composition-id="s01" data-composition-src="compositions/s01.html" data-start="0.0" data-duration="3.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s02" data-composition-id="s02" data-composition-src="compositions/s02.html" data-start="3.0" data-duration="6.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s03" data-composition-id="s03" data-composition-src="compositions/s03.html" data-start="9.0" data-duration="6.2" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s04" data-composition-id="s04" data-composition-src="compositions/s04.html" data-start="15.2" data-duration="5.8" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s05" data-composition-id="s05" data-composition-src="compositions/s05.html" data-start="21.0" data-duration="7.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s06" data-composition-id="s06" data-composition-src="compositions/s06.html" data-start="28.0" data-duration="8.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s07" data-composition-id="s07" data-composition-src="compositions/s07.html" data-start="36.0" data-duration="8.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s08" data-composition-id="s08" data-composition-src="compositions/s08.html" data-start="44.0" data-duration="4.4" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s09" data-composition-id="s09" data-composition-src="compositions/s09.html" data-start="48.4" data-duration="13.8" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s10" data-composition-id="s10" data-composition-src="compositions/s10.html" data-start="62.2" data-duration="11.0" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s11" data-composition-id="s11" data-composition-src="compositions/s11.html" data-start="73.2" data-duration="6.7" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s12" data-composition-id="s12" data-composition-src="compositions/s12.html" data-start="79.9" data-duration="8.6" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="grain" data-layout-ignore></div>
+      <audio id="music" class="clip" src="assets/audio/music.mp3" data-start="0" data-duration="88.5" data-track-index="2" data-volume="0.5" data-fade-out="2"></audio>
+      <audio id="vo-01" class="clip" src="assets/audio/01_hook.mp3" data-start="0.0" data-duration="2.32" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-02" class="clip" src="assets/audio/02_problema.mp3" data-start="3.0" data-duration="6.35" data-track-index="4" data-volume="1"></audio>
+      <audio id="vo-03" class="clip" src="assets/audio/03_reveal.mp3" data-start="8.91" data-duration="4.60" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-04" class="clip" src="assets/audio/04_oferta.mp3" data-start="15.2" data-duration="5.62" data-track-index="4" data-volume="1"></audio>
+      <audio id="vo-05" class="clip" src="assets/audio/05_melo.mp3" data-start="21.22" data-duration="4.13" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-06" class="clip" src="assets/audio/06_barahona.mp3" data-start="28.0" data-duration="4.21" data-track-index="4" data-volume="1"></audio>
+      <audio id="vo-07" class="clip" src="assets/audio/07_ecogreen.mp3" data-start="36.0" data-duration="3.47" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-08" class="clip" src="assets/audio/08_grid.mp3" data-start="44.0" data-duration="4.78" data-track-index="4" data-volume="1"></audio>
+      <audio id="vo-09" class="clip" src="assets/audio/09_comparacion.mp3" data-start="48.51" data-duration="13.37" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-10" class="clip" src="assets/audio/10_incluido.mp3" data-start="62.28" data-duration="10.63" data-track-index="4" data-volume="1"></audio>
+      <audio id="vo-11" class="clip" src="assets/audio/11_proceso.mp3" data-start="73.31" data-duration="5.04" data-track-index="3" data-volume="1"></audio>
+      <audio id="vo-12" class="clip" src="assets/audio/12_cta.mp3" data-start="80.0" data-duration="5.51" data-track-index="4" data-volume="1"></audio>
     </div>
     <script>
-      const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
-      window.__timelines["main"] = tl;
-      tl.seek(0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>

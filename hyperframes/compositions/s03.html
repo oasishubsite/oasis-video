@@ -1,0 +1,73 @@
+<template>
+  <style>
+@font-face{font-family:'Syne';src:url('assets/fonts/Syne-normal-latin-variable.woff2') format('woff2');font-weight:400 800;}
+@font-face{font-family:'DM Sans';src:url('assets/fonts/DMSans-normal-latin-variable.woff2') format('woff2');font-weight:100 1000;}
+
+#root{position:absolute;inset:0;overflow:hidden;font-family:'DM Sans',sans-serif;color:#F8FAFB;}
+#root *{box-sizing:border-box;margin:0;padding:0;}
+.syne{font-family:'Syne',sans-serif;}
+.blue{color:#3B82F6;}
+.grad{background:linear-gradient(90deg,#1754CF,#3B82F6 55%,#60A5FA);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.muted{color:#94A3B8;}
+.abs{position:absolute;}
+.w{display:inline-block;}
+.pill-real{position:absolute;left:60px;top:292px;display:flex;align-items:center;gap:14px;padding:12px 26px 12px 20px;border-radius:999px;
+  background:rgba(34,197,94,.10);border:1.5px solid rgba(34,197,94,.45);font-size:30px;font-weight:600;color:#BBF7D0;}
+.pill-real .dot{width:14px;height:14px;border-radius:50%;background:#22C55E;box-shadow:0 0 14px #22C55E;}
+/* Mockups genéricos (sin logos) */
+.imac{position:absolute;}
+.imac .bezel{background:#0A0A0C;border-radius:24px 24px 0 0;padding:20px;box-shadow:0 0 0 2px #2a2d33 inset;}
+.imac .chin{height:62px;border-radius:0 0 24px 24px;background:linear-gradient(180deg,#e3e6eb,#b9bfc8);}
+.imac .neck{width:190px;height:96px;margin:0 auto;background:linear-gradient(180deg,#9aa1ab,#cfd4db 40%,#a9b0b9);clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);}
+.imac .foot{width:330px;height:14px;margin:0 auto;border-radius:7px;background:linear-gradient(180deg,#d7dbe1,#9aa1ab);}
+.mbp{position:absolute;}
+.mbp .lid{background:#0B0B0D;border-radius:26px 26px 6px 6px;padding:20px 18px 26px;box-shadow:0 0 0 2px #2c2f35 inset;}
+.mbp .base{position:relative;left:-56px;width:calc(100% + 112px);height:30px;border-radius:2px 2px 22px 22px;
+  background:linear-gradient(180deg,#d9dde3 0%,#aab0ba 60%,#7d838d 100%);}
+.mbp .base:after{content:'';position:absolute;left:50%;top:0;width:150px;height:9px;margin-left:-75px;border-radius:0 0 10px 10px;background:#8e949e;}
+.screen{position:relative;overflow:hidden;background:#fff;}
+.screen img{position:absolute;left:0;top:0;width:100%;display:block;}
+.iphone{position:absolute;border-radius:54px;background:#0d0d10;padding:11px;box-shadow:0 0 0 2px #3a3d44, 0 40px 80px rgba(0,0,0,.6);}
+.iphone .screen{border-radius:44px;}
+.iphone .island{position:absolute;left:50%;top:22px;width:84px;height:24px;margin-left:-42px;border-radius:14px;background:#000;z-index:3;}
+.shadow{box-shadow:0 50px 90px rgba(0,0,0,.6);}
+
+
+#s03-flood{position:absolute;inset:0;background:#0F172A;}
+#s03-mark{position:absolute;left:340px;top:520px;width:400px;}
+#s03-word{position:absolute;left:0;top:810px;width:1080px;text-align:center;font-family:'Syne';font-weight:700;font-size:96px;letter-spacing:-0.035em;line-height:1;}
+#s03-sub{position:absolute;left:60px;top:960px;width:960px;text-align:center;font-size:50px;font-weight:500;line-height:1.25;color:#CBD5E1;}
+#s03-sweep{position:absolute;left:-600px;top:380px;width:420px;height:760px;background:linear-gradient(90deg,transparent,rgba(96,165,250,.35),rgba(255,255,255,.55),rgba(96,165,250,.35),transparent);filter:blur(30px);mix-blend-mode:screen;transform:rotate(18deg);}
+#s03-halo{position:absolute;left:190px;top:420px;width:700px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(23,84,207,.45),transparent);}
+
+  </style>
+  <div id="root" data-composition-id="s03" data-width="1080" data-height="1920">
+
+    <div id="s03-flood"></div>
+    <div id="s03-halo"></div>
+    <img id="s03-mark" src="assets/brand/logo_mark.png" alt="Oasis Hub Studio">
+    <div id="s03-word"><span class="w grad" id="s03-l0">O</span><span class="w grad" id="s03-l1">a</span><span class="w grad" id="s03-l2">s</span><span class="w grad" id="s03-l3">i</span><span class="w grad" id="s03-l4">s</span><span class="w grad" id="s03-l5">&nbsp;</span><span class="w grad" id="s03-l6">H</span><span class="w grad" id="s03-l7">u</span><span class="w grad" id="s03-l8">b</span><span class="w">&nbsp;</span><span class="w" id="s03-m0">S</span><span class="w" id="s03-m1">t</span><span class="w" id="s03-m2">u</span><span class="w" id="s03-m3">d</span><span class="w" id="s03-m4">i</span><span class="w" id="s03-m5">o</span></div>
+    <p id="s03-sub"><span class="blue" style="font-weight:700"><span class="w" id="s03a-0">+10</span> <span class="w" id="s03a-1">años</span></span> <span class="w" id="s03b-0">creando</span> <span class="w" id="s03b-1">websites</span> <span class="w" id="s03b-2">que</span> <span class="w" id="s03b-3">venden</span></p>
+    <div id="s03-sweep"></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const EASE = "expo.out";
+
+    tl.fromTo("#s03-flood", { opacity: 1 }, { opacity: 0, duration: .6, ease: "power2.inOut" }, 0.0);
+    tl.fromTo("#s03-halo", { opacity: 0, scale: .7 }, { opacity: 1, scale: 1, duration: 1.2, ease: "power2.out" }, 0.1);
+    tl.fromTo("#s03-mark", { opacity: 0, scale: .82, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: .8, ease: EASE }, 0.15);
+    for (let i = 0; i < 9; i++) tl.fromTo(`#s03-l${i}`, { opacity: 0.0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: .2 }, 0.26 + i * 0.045);
+    for (let i = 0; i < 6; i++) tl.fromTo(`#s03-m${i}`, { opacity: 0.0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: .2 }, 0.94 + i * 0.045);
+    [1.66, 2.22].forEach((t, i) => tl.fromTo(`#s03a-${i}`, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: .14 }, t));
+    [2.5, 2.94, 3.44, 3.56].forEach((t, i) => tl.fromTo(`#s03b-${i}`, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: .14 }, t));
+    tl.fromTo("#s03-sweep", { x: 0 }, { x: 2000, duration: 1.1, ease: "power2.inOut" }, 0.2);
+    tl.fromTo("#s03-sweep", { x: 0 }, { x: 2000, duration: 1.0, ease: "power2.inOut", immediateRender: false }, 4.3);
+    // corte a negro justo antes del drop (silencio de la música)
+    tl.to(["#s03-mark", "#s03-word", "#s03-sub", "#s03-halo"], { opacity: 0, scale: .94, filter: "blur(10px)", duration: .22, ease: "power3.in" }, 5.72);
+    tl.shiftChildren(-0.25, true, 0.3);   // la escena empieza en 9.0 s (tiempos escritos para 8.75 s)
+
+    window.__timelines["s03"] = tl;
+  </script>
+</template>

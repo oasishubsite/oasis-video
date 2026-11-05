@@ -1,0 +1,67 @@
+<template>
+  <style>
+@font-face{font-family:'Syne';src:url('assets/fonts/Syne-normal-latin-variable.woff2') format('woff2');font-weight:400 800;}
+@font-face{font-family:'DM Sans';src:url('assets/fonts/DMSans-normal-latin-variable.woff2') format('woff2');font-weight:100 1000;}
+
+#root{position:absolute;inset:0;overflow:hidden;font-family:'DM Sans',sans-serif;color:#F8FAFB;}
+#root *{box-sizing:border-box;margin:0;padding:0;}
+.syne{font-family:'Syne',sans-serif;}
+.blue{color:#3B82F6;}
+.grad{background:linear-gradient(90deg,#1754CF,#3B82F6 55%,#60A5FA);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.muted{color:#94A3B8;}
+.abs{position:absolute;}
+.w{display:inline-block;}
+.pill-real{position:absolute;left:60px;top:292px;display:flex;align-items:center;gap:14px;padding:12px 26px 12px 20px;border-radius:999px;
+  background:rgba(34,197,94,.10);border:1.5px solid rgba(34,197,94,.45);font-size:30px;font-weight:600;color:#BBF7D0;}
+.pill-real .dot{width:14px;height:14px;border-radius:50%;background:#22C55E;box-shadow:0 0 14px #22C55E;}
+/* Mockups genéricos (sin logos) */
+.imac{position:absolute;}
+.imac .bezel{background:#0A0A0C;border-radius:24px 24px 0 0;padding:20px;box-shadow:0 0 0 2px #2a2d33 inset;}
+.imac .chin{height:62px;border-radius:0 0 24px 24px;background:linear-gradient(180deg,#e3e6eb,#b9bfc8);}
+.imac .neck{width:190px;height:96px;margin:0 auto;background:linear-gradient(180deg,#9aa1ab,#cfd4db 40%,#a9b0b9);clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);}
+.imac .foot{width:330px;height:14px;margin:0 auto;border-radius:7px;background:linear-gradient(180deg,#d7dbe1,#9aa1ab);}
+.mbp{position:absolute;}
+.mbp .lid{background:#0B0B0D;border-radius:26px 26px 6px 6px;padding:20px 18px 26px;box-shadow:0 0 0 2px #2c2f35 inset;}
+.mbp .base{position:relative;left:-56px;width:calc(100% + 112px);height:30px;border-radius:2px 2px 22px 22px;
+  background:linear-gradient(180deg,#d9dde3 0%,#aab0ba 60%,#7d838d 100%);}
+.mbp .base:after{content:'';position:absolute;left:50%;top:0;width:150px;height:9px;margin-left:-75px;border-radius:0 0 10px 10px;background:#8e949e;}
+.screen{position:relative;overflow:hidden;background:#fff;}
+.screen img{position:absolute;left:0;top:0;width:100%;display:block;}
+.iphone{position:absolute;border-radius:54px;background:#0d0d10;padding:11px;box-shadow:0 0 0 2px #3a3d44, 0 40px 80px rgba(0,0,0,.6);}
+.iphone .screen{border-radius:44px;}
+.iphone .island{position:absolute;left:50%;top:22px;width:84px;height:24px;margin-left:-42px;border-radius:14px;background:#000;z-index:3;}
+.shadow{box-shadow:0 50px 90px rgba(0,0,0,.6);}
+
+
+.s08-l{position:absolute;left:60px;width:960px;font-family:'Syne';font-weight:700;font-size:84px;line-height:1;letter-spacing:-0.035em;}
+.s08-ph{position:absolute;top:640px;width:300px;height:620px;border-radius:44px;background:#0d0d10;padding:9px;box-shadow:0 0 0 2px #3a3d44,0 40px 80px rgba(0,0,0,.6);}
+.s08-ph .screen{width:282px;height:602px;border-radius:36px;}
+.s08-lab{position:absolute;top:1290px;width:300px;text-align:center;font-size:32px;font-weight:600;color:#94A3B8;}
+
+  </style>
+  <div id="root" data-composition-id="s08" data-width="1080" data-height="1920">
+
+    <div class="s08-l" id="s08-a" style="top:300px">3 industrias.</div>
+    <div class="s08-l" id="s08-b" style="top:396px">3 diseños únicos.</div>
+    <div class="s08-l blue" id="s08-c" style="top:492px">Cero plantillas.</div>
+    <div class="s08-ph" id="s08-p0" style="left:60px"><div class="screen"><img src="assets/sites/melo_mobile.jpg"></div></div>
+    <div class="s08-lab" id="s08-t0" style="left:60px">Bebidas</div>
+    <div class="s08-ph" id="s08-p1" style="left:390px"><div class="screen"><img src="assets/sites/barahona_mobile.jpg"></div></div>
+    <div class="s08-lab" id="s08-t1" style="left:390px">Hospedaje</div>
+    <div class="s08-ph" id="s08-p2" style="left:720px"><div class="screen"><img src="assets/sites/ecogreen_mobile.jpg"></div></div>
+    <div class="s08-lab" id="s08-t2" style="left:720px">Paisajismo</div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const EASE = "expo.out";
+
+    [["#s08-a", 0.1], ["#s08-b", 1.58], ["#s08-c", 3.3]].forEach(([s, t]) => tl.fromTo(s, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: .18, ease: "power2.out" }, t));
+    [-1, 0, 1].forEach((d, i) => tl.fromTo(`#s08-p${i}`, { opacity: 0, x: d * 160, y: 80, scale: .9 }, { opacity: 1, x: 0, y: 0, scale: 1, duration: .7, ease: EASE }, 0.0 + i * 0.08));
+    [0, 1, 2].forEach(i => tl.fromTo(`#s08-t${i}`, { opacity: 0 }, { opacity: 1, duration: .3 }, 0.6 + i * 0.1));
+    tl.to(["#s08-p0", "#s08-p1", "#s08-p2", "#s08-t0", "#s08-t1", "#s08-t2"], { y: 700, opacity: 0, duration: .32, ease: "power3.in", stagger: .03 }, 4.05);
+    tl.to(["#s08-a", "#s08-b", "#s08-c"], { opacity: 0, filter: "blur(8px)", duration: .2, ease: "power2.in" }, 4.15);
+
+    window.__timelines["s08"] = tl;
+  </script>
+</template>

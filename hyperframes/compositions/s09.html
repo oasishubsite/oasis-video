@@ -1,0 +1,123 @@
+<template>
+  <style>
+@font-face{font-family:'Syne';src:url('assets/fonts/Syne-normal-latin-variable.woff2') format('woff2');font-weight:400 800;}
+@font-face{font-family:'DM Sans';src:url('assets/fonts/DMSans-normal-latin-variable.woff2') format('woff2');font-weight:100 1000;}
+
+#root{position:absolute;inset:0;overflow:hidden;font-family:'DM Sans',sans-serif;color:#F8FAFB;}
+#root *{box-sizing:border-box;margin:0;padding:0;}
+.syne{font-family:'Syne',sans-serif;}
+.blue{color:#3B82F6;}
+.grad{background:linear-gradient(90deg,#1754CF,#3B82F6 55%,#60A5FA);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.muted{color:#94A3B8;}
+.abs{position:absolute;}
+.w{display:inline-block;}
+.pill-real{position:absolute;left:60px;top:292px;display:flex;align-items:center;gap:14px;padding:12px 26px 12px 20px;border-radius:999px;
+  background:rgba(34,197,94,.10);border:1.5px solid rgba(34,197,94,.45);font-size:30px;font-weight:600;color:#BBF7D0;}
+.pill-real .dot{width:14px;height:14px;border-radius:50%;background:#22C55E;box-shadow:0 0 14px #22C55E;}
+/* Mockups genéricos (sin logos) */
+.imac{position:absolute;}
+.imac .bezel{background:#0A0A0C;border-radius:24px 24px 0 0;padding:20px;box-shadow:0 0 0 2px #2a2d33 inset;}
+.imac .chin{height:62px;border-radius:0 0 24px 24px;background:linear-gradient(180deg,#e3e6eb,#b9bfc8);}
+.imac .neck{width:190px;height:96px;margin:0 auto;background:linear-gradient(180deg,#9aa1ab,#cfd4db 40%,#a9b0b9);clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);}
+.imac .foot{width:330px;height:14px;margin:0 auto;border-radius:7px;background:linear-gradient(180deg,#d7dbe1,#9aa1ab);}
+.mbp{position:absolute;}
+.mbp .lid{background:#0B0B0D;border-radius:26px 26px 6px 6px;padding:20px 18px 26px;box-shadow:0 0 0 2px #2c2f35 inset;}
+.mbp .base{position:relative;left:-56px;width:calc(100% + 112px);height:30px;border-radius:2px 2px 22px 22px;
+  background:linear-gradient(180deg,#d9dde3 0%,#aab0ba 60%,#7d838d 100%);}
+.mbp .base:after{content:'';position:absolute;left:50%;top:0;width:150px;height:9px;margin-left:-75px;border-radius:0 0 10px 10px;background:#8e949e;}
+.screen{position:relative;overflow:hidden;background:#fff;}
+.screen img{position:absolute;left:0;top:0;width:100%;display:block;}
+.iphone{position:absolute;border-radius:54px;background:#0d0d10;padding:11px;box-shadow:0 0 0 2px #3a3d44, 0 40px 80px rgba(0,0,0,.6);}
+.iphone .screen{border-radius:44px;}
+.iphone .island{position:absolute;left:50%;top:22px;width:84px;height:24px;margin-left:-42px;border-radius:14px;background:#000;z-index:3;}
+.shadow{box-shadow:0 50px 90px rgba(0,0,0,.6);}
+
+
+#s09-colb{position:absolute;left:640px;top:300px;width:390px;height:930px;border-radius:32px;background:linear-gradient(180deg,rgba(23,84,207,.32),rgba(23,84,207,.14));border:2px solid rgba(59,130,246,.55);}
+.s09-h{position:absolute;top:322px;font-size:32px;font-weight:700;line-height:1.1;}
+#s09-ha{left:340px;width:280px;color:#94A3B8;}
+#s09-hb{left:664px;width:350px;font-family:'Syne';font-weight:700;font-size:36px;}
+.s09-row{position:absolute;left:40px;width:1000px;height:100px;border-top:1.5px solid rgba(148,163,184,.14);}
+.s09-lab{position:absolute;left:10px;top:22px;width:280px;font-size:28px;font-weight:600;line-height:1.1;color:#CBD5E1;}
+.s09-a{position:absolute;left:300px;top:20px;width:290px;font-size:28px;font-weight:500;line-height:1.15;color:#94A3B8;display:flex;gap:10px;align-items:flex-start;}
+.s09-b{position:absolute;left:624px;top:18px;width:370px;font-size:31px;font-weight:700;line-height:1.12;color:#F8FAFB;display:flex;gap:12px;align-items:flex-start;}
+.ic{flex:none;width:30px;height:30px;margin-top:2px;}
+.ic.x{color:rgba(239,68,68,.7);} .ic.v{color:#22C55E;}
+.ic svg{width:100%;height:100%;}
+#s09-note{position:absolute;left:50px;top:1236px;font-size:28px;color:#64748B;}
+#s09-final{position:absolute;left:60px;top:640px;width:960px;padding:56px 40px;border-radius:40px;background:rgba(5,7,13,.86);border:2px solid rgba(59,130,246,.6);
+  text-align:center;font-family:'Syne';font-weight:700;font-size:100px;line-height:1;letter-spacing:-0.035em;box-shadow:0 0 120px rgba(23,84,207,.45);}
+
+  </style>
+  <div id="root" data-composition-id="s09" data-width="1080" data-height="1920">
+
+    <div id="s09-table">
+    <div id="s09-colb"></div>
+    <div class="s09-h" id="s09-ha">Agencia tradicional</div>
+    <div class="s09-h" id="s09-hb"><span class="grad">Oasis Hub</span> Studio</div>
+    <div class="s09-row" id="s09-r0" style="top:420px">
+      <div class="s09-lab">Precio landing page</div>
+      <div class="s09-a" id="s09-a0"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>$500 – $1,500+</div>
+      <div class="s09-b" id="s09-b0"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>$249 pago único</div>
+    </div>
+    <div class="s09-row" id="s09-r1" style="top:520px">
+      <div class="s09-lab">Tiempo de entrega</div>
+      <div class="s09-a" id="s09-a1"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>2 – 6 semanas</div>
+      <div class="s09-b" id="s09-b1"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>2 – 3 días</div>
+    </div>
+    <div class="s09-row" id="s09-r2" style="top:620px">
+      <div class="s09-lab">Diseño</div>
+      <div class="s09-a" id="s09-a2"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Plantilla adaptada</div>
+      <div class="s09-b" id="s09-b2"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>100% a la medida</div>
+    </div>
+    <div class="s09-row" id="s09-r3" style="top:720px">
+      <div class="s09-lab">Mantenimiento 1er año</div>
+      <div class="s09-a" id="s09-a3"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Se cobra aparte</div>
+      <div class="s09-b" id="s09-b3"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Incluido</div>
+    </div>
+    <div class="s09-row" id="s09-r4" style="top:820px">
+      <div class="s09-lab">Google Business</div>
+      <div class="s09-a" id="s09-a4"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Servicio extra</div>
+      <div class="s09-b" id="s09-b4"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Gratis</div>
+    </div>
+    <div class="s09-row" id="s09-r5" style="top:920px">
+      <div class="s09-lab">WhatsApp integrado</div>
+      <div class="s09-a" id="s09-a5"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>A veces</div>
+      <div class="s09-b" id="s09-b5"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Siempre</div>
+    </div>
+    <div class="s09-row" id="s09-r6" style="top:1020px">
+      <div class="s09-lab">Hosting + SSL</div>
+      <div class="s09-a" id="s09-a6"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Se cobra aparte</div>
+      <div class="s09-b" id="s09-b6"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Incluido</div>
+    </div>
+    <div class="s09-row" id="s09-r7" style="top:1120px">
+      <div class="s09-lab">Atención</div>
+      <div class="s09-a" id="s09-a7"><span class="ic x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Tickets y correos</div>
+      <div class="s09-b" id="s09-b7"><span class="ic v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path pathLength="100" d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Directo por WhatsApp</div>
+    </div>
+    <div id="s09-note">Agencia tradicional: rangos típicos del mercado.</div>
+    </div>
+    <div id="s09-final">La elección<br>es <span class="blue">obvia.</span></div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const EASE = "expo.out";
+
+    tl.fromTo("#s09-ha", { opacity: 0 }, { opacity: 1, duration: .3 }, 0.2);
+    tl.fromTo("#s09-colb", { opacity: 0, scaleY: .96 }, { opacity: 1, scaleY: 1, duration: .5, ease: EASE, transformOrigin: "50% 0%" }, 4.0);
+    tl.fromTo("#s09-hb", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: .2 }, 4.1);
+    const RT = [[1.75, 5.15], [2.57, 7.05], [8.2, 8.25], [8.7, 8.75], [8.95, 9.0], [9.2, 9.25], [9.45, 9.5], [10.0, 10.0]];
+    RT.forEach(([ta, tb], i) => {
+      tl.fromTo(`#s09-r${i}`, { opacity: 0 }, { opacity: 1, duration: .25 }, Math.min(ta, tb) - 0.05);
+      tl.fromTo(`#s09-a${i}`, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: .3, ease: EASE }, ta);
+      tl.fromTo(`#s09-b${i}`, { opacity: 0, x: 24, filter: "blur(6px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: .32, ease: EASE }, tb);
+    });
+    tl.fromTo("#s09-note", { opacity: 0 }, { opacity: 1, duration: .3 }, 2.9);
+    tl.to("#s09-table", { opacity: .28, filter: "blur(3px)", duration: .3, ease: "power2.inOut" }, 11.85);
+    tl.fromTo("#s09-final", { opacity: 0, scale: 1.08, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: .35, ease: EASE }, 11.95);
+    tl.to(["#s09-final", "#s09-table"], { opacity: 0, y: -120, filter: "blur(10px)", duration: .28, ease: "power3.in" }, 13.5);
+
+    window.__timelines["s09"] = tl;
+  </script>
+</template>

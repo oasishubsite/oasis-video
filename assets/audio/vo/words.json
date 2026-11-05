@@ -1,0 +1,857 @@
+{
+ "01_hook": {
+  "start": 0.0,
+  "words": [
+   {
+    "text": "¿Tu",
+    "start": 0.08,
+    "end": 0.16
+   },
+   {
+    "text": "negocio",
+    "start": 0.24,
+    "end": 0.58
+   },
+   {
+    "text": "no",
+    "start": 0.64,
+    "end": 0.72
+   },
+   {
+    "text": "aparece",
+    "start": 0.76,
+    "end": 1.14
+   },
+   {
+    "text": "cuando",
+    "start": 1.22,
+    "end": 1.42
+   },
+   {
+    "text": "te",
+    "start": 1.48,
+    "end": 1.58
+   },
+   {
+    "text": "buscan?",
+    "start": 1.6,
+    "end": 1.94
+   }
+  ]
+ },
+ "02_problema": {
+  "start": 3.0,
+  "words": [
+   {
+    "text": "Hoy",
+    "start": 3.1,
+    "end": 3.22
+   },
+   {
+    "text": "los",
+    "start": 3.26,
+    "end": 3.4
+   },
+   {
+    "text": "clientes",
+    "start": 3.46,
+    "end": 3.84
+   },
+   {
+    "text": "investigan",
+    "start": 3.88,
+    "end": 4.38
+   },
+   {
+    "text": "antes",
+    "start": 4.44,
+    "end": 4.66
+   },
+   {
+    "text": "de",
+    "start": 4.7,
+    "end": 4.8
+   },
+   {
+    "text": "comprar.",
+    "start": 4.82,
+    "end": 5.18
+   },
+   {
+    "text": "Si",
+    "start": 5.74,
+    "end": 5.8
+   },
+   {
+    "text": "no",
+    "start": 5.86,
+    "end": 5.96
+   },
+   {
+    "text": "te",
+    "start": 6.02,
+    "end": 6.06
+   },
+   {
+    "text": "encuentran,",
+    "start": 6.1,
+    "end": 6.6
+   },
+   {
+    "text": "compran",
+    "start": 7.58,
+    "end": 7.9
+   },
+   {
+    "text": "en",
+    "start": 7.94,
+    "end": 8.02
+   },
+   {
+    "text": "otro",
+    "start": 8.06,
+    "end": 8.24
+   },
+   {
+    "text": "lado",
+    "start": 8.3,
+    "end": 8.52
+   }
+  ]
+ },
+ "03_reveal": {
+  "start": 8.91,
+  "words": [
+   {
+    "text": "Oasis",
+    "start": 9.01,
+    "end": 9.35
+   },
+   {
+    "text": "Hub",
+    "start": 9.41,
+    "end": 9.59
+   },
+   {
+    "text": "Studio,",
+    "start": 9.69,
+    "end": 9.99
+   },
+   {
+    "text": "más",
+    "start": 10.41,
+    "end": 10.57
+   },
+   {
+    "text": "de",
+    "start": 10.61,
+    "end": 10.69
+   },
+   {
+    "text": "10",
+    "start": 10.71,
+    "end": 10.91
+   },
+   {
+    "text": "años",
+    "start": 10.97,
+    "end": 11.19
+   },
+   {
+    "text": "creando",
+    "start": 11.25,
+    "end": 11.63
+   },
+   {
+    "text": "websites",
+    "start": 11.69,
+    "end": 12.11
+   },
+   {
+    "text": "que",
+    "start": 12.19,
+    "end": 12.29
+   },
+   {
+    "text": "venden",
+    "start": 12.31,
+    "end": 12.63
+   }
+  ]
+ },
+ "04_oferta": {
+  "start": 15.2,
+  "words": [
+   {
+    "text": "Landing",
+    "start": 15.28,
+    "end": 15.58
+   },
+   {
+    "text": "page",
+    "start": 15.66,
+    "end": 15.84
+   },
+   {
+    "text": "profesional:",
+    "start": 15.92,
+    "end": 16.5
+   },
+   {
+    "text": "$249,",
+    "start": 16.92,
+    "end": 18.16
+   },
+   {
+    "text": "lista",
+    "start": 18.88,
+    "end": 19.16
+   },
+   {
+    "text": "en",
+    "start": 19.2,
+    "end": 19.28
+   },
+   {
+    "text": "dos",
+    "start": 19.34,
+    "end": 19.52
+   },
+   {
+    "text": "a",
+    "start": 19.56,
+    "end": 19.6
+   },
+   {
+    "text": "tres",
+    "start": 19.68,
+    "end": 19.84
+   },
+   {
+    "text": "días",
+    "start": 19.9,
+    "end": 20.2
+   }
+  ]
+ },
+ "05_melo": {
+  "start": 21.22,
+  "words": [
+   {
+    "text": "Melo",
+    "start": 21.3,
+    "end": 21.5
+   },
+   {
+    "text": "Kombucha.",
+    "start": 21.58,
+    "end": 22.04
+   },
+   {
+    "text": "Un",
+    "start": 22.94,
+    "end": 23.0
+   },
+   {
+    "text": "proyecto",
+    "start": 23.06,
+    "end": 23.42
+   },
+   {
+    "text": "real,",
+    "start": 23.52,
+    "end": 23.76
+   },
+   {
+    "text": "en",
+    "start": 24.14,
+    "end": 24.24
+   },
+   {
+    "text": "línea",
+    "start": 24.28,
+    "end": 24.54
+   },
+   {
+    "text": "hoy",
+    "start": 24.58,
+    "end": 24.74
+   }
+  ]
+ },
+ "06_barahona": {
+  "start": 28.0,
+  "words": [
+   {
+    "text": "Barahona",
+    "start": 28.08,
+    "end": 28.52
+   },
+   {
+    "text": "Caribbean",
+    "start": 28.6,
+    "end": 29.0
+   },
+   {
+    "text": "Stay.",
+    "start": 29.12,
+    "end": 29.38
+   },
+   {
+    "text": "Reservas",
+    "start": 30.14,
+    "end": 30.58
+   },
+   {
+    "text": "directo",
+    "start": 30.6,
+    "end": 30.94
+   },
+   {
+    "text": "a",
+    "start": 30.96,
+    "end": 31.02
+   },
+   {
+    "text": "WhatsApp",
+    "start": 31.06,
+    "end": 31.5
+   }
+  ]
+ },
+ "07_ecogreen": {
+  "start": 36.0,
+  "words": [
+   {
+    "text": "Proyecto",
+    "start": 36.08,
+    "end": 36.48
+   },
+   {
+    "text": "Eco",
+    "start": 36.62,
+    "end": 36.8
+   },
+   {
+    "text": "Green:",
+    "start": 36.86,
+    "end": 37.12
+   },
+   {
+    "text": "paisajismo",
+    "start": 37.74,
+    "end": 38.3
+   },
+   {
+    "text": "con",
+    "start": 38.38,
+    "end": 38.48
+   },
+   {
+    "text": "propósito",
+    "start": 38.52,
+    "end": 39.04
+   }
+  ]
+ },
+ "08_grid": {
+  "start": 44.0,
+  "words": [
+   {
+    "text": "Tres",
+    "start": 44.1,
+    "end": 44.28
+   },
+   {
+    "text": "industrias,",
+    "start": 44.34,
+    "end": 44.96
+   },
+   {
+    "text": "tres",
+    "start": 45.58,
+    "end": 45.72
+   },
+   {
+    "text": "diseños",
+    "start": 45.78,
+    "end": 46.2
+   },
+   {
+    "text": "únicos,",
+    "start": 46.26,
+    "end": 46.64
+   },
+   {
+    "text": "cero",
+    "start": 47.32,
+    "end": 47.52
+   },
+   {
+    "text": "plantillas",
+    "start": 47.6,
+    "end": 48.16
+   }
+  ]
+ },
+ "09_comparacion": {
+  "start": 48.51,
+  "words": [
+   {
+    "text": "Una",
+    "start": 48.61,
+    "end": 48.75
+   },
+   {
+    "text": "agencia",
+    "start": 48.79,
+    "end": 49.13
+   },
+   {
+    "text": "tradicional",
+    "start": 49.21,
+    "end": 49.79
+   },
+   {
+    "text": "suele",
+    "start": 49.87,
+    "end": 50.11
+   },
+   {
+    "text": "cobrar",
+    "start": 50.15,
+    "end": 50.43
+   },
+   {
+    "text": "más",
+    "start": 50.53,
+    "end": 50.73
+   },
+   {
+    "text": "y",
+    "start": 50.85,
+    "end": 50.89
+   },
+   {
+    "text": "tardar",
+    "start": 50.97,
+    "end": 51.25
+   },
+   {
+    "text": "semanas.",
+    "start": 51.33,
+    "end": 51.77
+   },
+   {
+    "text": "Con",
+    "start": 52.51,
+    "end": 52.61
+   },
+   {
+    "text": "nosotros,",
+    "start": 52.65,
+    "end": 53.13
+   },
+   {
+    "text": "doscientos",
+    "start": 53.51,
+    "end": 53.93
+   },
+   {
+    "text": "cuarenta",
+    "start": 54.01,
+    "end": 54.31
+   },
+   {
+    "text": "y",
+    "start": 54.35,
+    "end": 54.37
+   },
+   {
+    "text": "nueve",
+    "start": 54.43,
+    "end": 54.65
+   },
+   {
+    "text": "dólares",
+    "start": 54.71,
+    "end": 55.11
+   },
+   {
+    "text": "en",
+    "start": 55.37,
+    "end": 55.45
+   },
+   {
+    "text": "dos",
+    "start": 55.49,
+    "end": 55.63
+   },
+   {
+    "text": "a",
+    "start": 55.67,
+    "end": 55.71
+   },
+   {
+    "text": "tres",
+    "start": 55.77,
+    "end": 55.93
+   },
+   {
+    "text": "días,",
+    "start": 56.01,
+    "end": 56.29
+   },
+   {
+    "text": "100",
+    "start": 56.549,
+    "end": 56.77
+   },
+   {
+    "text": "%",
+    "start": 56.79,
+    "end": 57.19
+   },
+   {
+    "text": "a",
+    "start": 57.21,
+    "end": 57.25
+   },
+   {
+    "text": "la",
+    "start": 57.29,
+    "end": 57.33
+   },
+   {
+    "text": "medida",
+    "start": 57.41,
+    "end": 57.75
+   },
+   {
+    "text": "y",
+    "start": 58.07,
+    "end": 58.09
+   },
+   {
+    "text": "con",
+    "start": 58.17,
+    "end": 58.31
+   },
+   {
+    "text": "atención",
+    "start": 58.35,
+    "end": 58.77
+   },
+   {
+    "text": "directa",
+    "start": 58.81,
+    "end": 59.15
+   },
+   {
+    "text": "por",
+    "start": 59.25,
+    "end": 59.37
+   },
+   {
+    "text": "WhatsApp.",
+    "start": 59.41,
+    "end": 59.83
+   },
+   {
+    "text": "La",
+    "start": 60.37,
+    "end": 60.43
+   },
+   {
+    "text": "elección",
+    "start": 60.47,
+    "end": 60.87
+   },
+   {
+    "text": "es",
+    "start": 60.91,
+    "end": 61.01
+   },
+   {
+    "text": "obvia",
+    "start": 61.07,
+    "end": 61.31
+   }
+  ]
+ },
+ "10_incluido": {
+  "start": 62.28,
+  "words": [
+   {
+    "text": "Todo",
+    "start": 62.4,
+    "end": 62.56
+   },
+   {
+    "text": "incluido:",
+    "start": 62.62,
+    "end": 63.02
+   },
+   {
+    "text": "diseño",
+    "start": 63.4,
+    "end": 63.7
+   },
+   {
+    "text": "a",
+    "start": 63.72,
+    "end": 63.76
+   },
+   {
+    "text": "la",
+    "start": 63.8,
+    "end": 63.86
+   },
+   {
+    "text": "medida,",
+    "start": 63.92,
+    "end": 64.24
+   },
+   {
+    "text": "WhatsApp",
+    "start": 64.56,
+    "end": 64.98
+   },
+   {
+    "text": "y",
+    "start": 65.0,
+    "end": 65.02
+   },
+   {
+    "text": "formularios,",
+    "start": 65.1,
+    "end": 65.7
+   },
+   {
+    "text": "SEO",
+    "start": 66.14,
+    "end": 66.4
+   },
+   {
+    "text": "inicial,",
+    "start": 66.44,
+    "end": 66.94
+   },
+   {
+    "text": "hosting",
+    "start": 67.3,
+    "end": 67.64
+   },
+   {
+    "text": "con",
+    "start": 67.66,
+    "end": 67.8
+   },
+   {
+    "text": "SSL,",
+    "start": 67.96,
+    "end": 68.58
+   },
+   {
+    "text": "el",
+    "start": 69.06,
+    "end": 69.14
+   },
+   {
+    "text": "primer",
+    "start": 69.16,
+    "end": 69.4
+   },
+   {
+    "text": "año",
+    "start": 69.46,
+    "end": 69.62
+   },
+   {
+    "text": "de",
+    "start": 69.64,
+    "end": 69.72
+   },
+   {
+    "text": "mantenimiento",
+    "start": 69.76,
+    "end": 70.34
+   },
+   {
+    "text": "y",
+    "start": 70.84,
+    "end": 70.88
+   },
+   {
+    "text": "Google",
+    "start": 70.94,
+    "end": 71.16
+   },
+   {
+    "text": "Business",
+    "start": 71.22,
+    "end": 71.58
+   },
+   {
+    "text": "gratis",
+    "start": 72.04,
+    "end": 72.4
+   }
+  ]
+ },
+ "11_proceso": {
+  "start": 73.31,
+  "words": [
+   {
+    "text": "Nos",
+    "start": 73.39,
+    "end": 73.51
+   },
+   {
+    "text": "escribes",
+    "start": 73.55,
+    "end": 73.99
+   },
+   {
+    "text": "por",
+    "start": 74.01,
+    "end": 74.13
+   },
+   {
+    "text": "WhatsApp,",
+    "start": 74.17,
+    "end": 74.57
+   },
+   {
+    "text": "diseñamos",
+    "start": 74.73,
+    "end": 75.25
+   },
+   {
+    "text": "tu",
+    "start": 75.27,
+    "end": 75.33
+   },
+   {
+    "text": "sitio",
+    "start": 75.41,
+    "end": 75.69
+   },
+   {
+    "text": "y",
+    "start": 76.05,
+    "end": 76.09
+   },
+   {
+    "text": "en",
+    "start": 76.13,
+    "end": 76.23
+   },
+   {
+    "text": "dos",
+    "start": 76.27,
+    "end": 76.41
+   },
+   {
+    "text": "a",
+    "start": 76.47,
+    "end": 76.49
+   },
+   {
+    "text": "tres",
+    "start": 76.57,
+    "end": 76.73
+   },
+   {
+    "text": "días",
+    "start": 76.79,
+    "end": 77.11
+   },
+   {
+    "text": "estás",
+    "start": 77.31,
+    "end": 77.59
+   },
+   {
+    "text": "en",
+    "start": 77.61,
+    "end": 77.71
+   },
+   {
+    "text": "línea",
+    "start": 77.75,
+    "end": 78.01
+   }
+  ]
+ },
+ "12_cta": {
+  "start": 80.0,
+  "words": [
+   {
+    "text": "Tu",
+    "start": 80.06,
+    "end": 80.14
+   },
+   {
+    "text": "website,",
+    "start": 80.22,
+    "end": 80.64
+   },
+   {
+    "text": "listo",
+    "start": 80.96,
+    "end": 81.2
+   },
+   {
+    "text": "esta",
+    "start": 81.22,
+    "end": 81.4
+   },
+   {
+    "text": "semana,",
+    "start": 81.48,
+    "end": 81.8
+   },
+   {
+    "text": "doscientos",
+    "start": 82.14,
+    "end": 82.58
+   },
+   {
+    "text": "cuarenta",
+    "start": 82.64,
+    "end": 82.94
+   },
+   {
+    "text": "y",
+    "start": 82.98,
+    "end": 83.0
+   },
+   {
+    "text": "nueve",
+    "start": 83.06,
+    "end": 83.26
+   },
+   {
+    "text": "dólares.",
+    "start": 83.32,
+    "end": 83.7
+   },
+   {
+    "text": "Escríbenos",
+    "start": 84.059,
+    "end": 84.6
+   },
+   {
+    "text": "por",
+    "start": 84.62,
+    "end": 84.74
+   },
+   {
+    "text": "WhatsApp",
+    "start": 84.78,
+    "end": 85.14
+   }
+  ]
+ }
+}
