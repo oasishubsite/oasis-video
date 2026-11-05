@@ -602,5 +602,18 @@
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "20c44b52-a4e9-434f-8171-00d54392a6a2",
+      "completedAt": 1793865051487,
+      "output": "/tmp/claude-0/-home-user-oasis-video/6e4f84d4-ce64-538d-87da-386fbfbd80bc/scratchpad/draft.mp4",
+      "status": "completed",
+      "revision": "6221fab7-f7f4-407b-98fe-ad79ecaab072"
+    },
+    "retainedRevisions": [
+      "6221fab7-f7f4-407b-98fe-ad79ecaab072"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
