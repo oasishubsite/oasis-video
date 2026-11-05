@@ -1,0 +1,107 @@
+{
+  "melo": {
+    "url": "https://melokombucha.com",
+    "desktop": {
+      "title": "Melo Kombucha | Bebida Probiótica Natural de Costa Rica",
+      "h1": "¡Eleva tu experiencia de bienestar con Melo Kombucha!",
+      "h1Color": "rgb(32, 50, 60)",
+      "h1Font": "\"Playfair Display\", serif",
+      "bodyBg": "rgb(250, 248, 245)",
+      "height": 9157,
+      "theme": null
+    },
+    "mobile": {
+      "title": "Melo Kombucha | Bebida Probiótica Natural de Costa Rica",
+      "h1": "¡Eleva tu experiencia de bienestar con Melo Kombucha!",
+      "h1Color": "rgb(32, 50, 60)",
+      "h1Font": "\"Playfair Display\", serif",
+      "bodyBg": "rgb(250, 248, 245)",
+      "height": 10201,
+      "theme": null
+    }
+  },
+  "barahona": {
+    "url": "https://barahonastay.site",
+    "desktop": {
+      "title": "Barahona Caribbean Stay — Tu estadía VIP | Limón, Costa Rica",
+      "h1": "Barahona Caribbean Stay",
+      "h1Color": "rgb(252, 250, 248)",
+      "h1Font": "\"Cormorant Garamond\", serif",
+      "bodyBg": "rgb(252, 250, 248)",
+      "height": 6421,
+      "theme": null
+    },
+    "mobile": {
+      "title": "Barahona Caribbean Stay — Tu estadía VIP | Limón, Costa Rica",
+      "h1": "Barahona Caribbean Stay",
+      "h1Color": "rgb(252, 250, 248)",
+      "h1Font": "\"Cormorant Garamond\", serif",
+      "bodyBg": "rgb(252, 250, 248)",
+      "height": 6374,
+      "theme": null
+    }
+  },
+  "ecogreen": {
+    "url": "https://proyectoecogreen.com",
+    "desktop": {
+      "title": "Proyecto Ecogreen",
+      "h1": "Diseñamos jardines con propósito",
+      "h1Color": "rgb(244, 247, 237)",
+      "h1Font": "\"Playfair Display\", serif",
+      "bodyBg": "rgb(246, 249, 247)",
+      "height": 11882,
+      "theme": null
+    },
+    "mobile": {
+      "title": "Proyecto Ecogreen",
+      "h1": "Diseñamos jardines con propósito",
+      "h1Color": "rgb(244, 247, 237)",
+      "h1Font": "\"Playfair Display\", serif",
+      "bodyBg": "rgb(246, 249, 247)",
+      "height": 14989,
+      "theme": null
+    }
+  },
+  "oasis": {
+    "url": "https://oasishub.studio",
+    "desktop": {
+      "title": "Oasis Hub Studio — Websites & Apps para Negocios",
+      "h1": "Website Design and App Development for Businesses",
+      "h1Color": "rgb(21, 27, 40)",
+      "h1Font": "Inter, system-ui, sans-serif",
+      "bodyBg": "rgb(248, 250, 251)",
+      "height": 8434,
+      "theme": null
+    },
+    "mobile": {
+      "title": "Oasis Hub Studio — Websites & Apps para Negocios",
+      "h1": "Website Design and App Development for Businesses",
+      "h1Color": "rgb(21, 27, 40)",
+      "h1Font": "Inter, system-ui, sans-serif",
+      "bodyBg": "rgb(248, 250, 251)",
+      "height": 14288,
+      "theme": null
+    }
+  },
+  "oasis_precios": {
+    "url": "https://oasishub.studio/precios",
+    "desktop": {
+      "title": "Precios de Websites y Apps | Oasis Hub Studio",
+      "h1": "Precios claros. Soluciones a tu medida.",
+      "h1Color": "rgb(21, 27, 40)",
+      "h1Font": "\"Space Grotesk\", system-ui, sans-serif",
+      "bodyBg": "rgb(248, 250, 251)",
+      "height": 2293,
+      "theme": null
+    },
+    "mobile": {
+      "title": "Precios de Websites y Apps | Oasis Hub Studio",
+      "h1": "Precios claros. Soluciones a tu medida.",
+      "h1Color": "rgb(21, 27, 40)",
+      "h1Font": "\"Space Grotesk\", system-ui, sans-serif",
+      "bodyBg": "rgb(248, 250, 251)",
+      "height": 4863,
+      "theme": null
+    }
+  }
+}
